@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IISTM Entrance Test (UG)-2024</title>
+  <link rel="stylesheet" type="text/css" href="/Documents upload/docstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo.jpeg" alt="IISTM Logo">
+    </div>
+    <div class="title">
+      <h1>IISTM Entrance Test (UG)-2024</h1>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="progress-bar">
+      <h4>Application Form Steps</h4>
+      <ul>
+        <li><i class="fa-solid fa-circle"></i><a href="/index.html">Personal Details</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Additional details/indexad.html">Additional Details</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Educational details/indexed.html">Educational Qualification</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Documents upload/docindex.html">Documents Upload</a></li>
+        <li><i class="fa-regular fa-circle"></i><a href="/Final preview/indexfp.html">Final Preview</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <section class="heading">
+        <h2>Documents Upload</h2>
+      </section>
+
+      <section>
+        <form id="documents-upload-form" onsubmit="return validateForm()">
+          <label for="photo">Photo (Accepted only JPG format, 50-200KB):</label>
+          <input type="file" id="photo" name="photo" accept=".jpg" required>
+
+          <label for="signature">Signature (Accepted only JPG format, 30-200KB):</label>
+          <input type="file" id="signature" name="signature" accept=".jpg" required>
+
+          <label for="photo-id-proof">Photo ID Proof (Accepted only JPG and PDF formats, 50KB-2MB):</label>
+          <input type="file" id="photo-id-proof" name="photo-id-proof" accept=".jpg, .pdf" required>
+
+          <label for="birth-certificate">Birth Certificate Proof (Accepted only JPG and PDF formats, 50KB-2MB):</label>
+          <input type="file" id="birth-certificate" name="birth-certificate" accept=".jpg, .pdf" required>
+
+          <label for="category-certificate">Category Certificate (if applicable) (Accepted only JPG and PDF formats, 50KB-2MB):</label>
+          <input type="file" id="category-certificate" name="category-certificate" accept=".jpg, .pdf">
+
+          <label for="class-10-marksheet">Class 10 Marksheet (Accepted only JPG and PDF formats, 50KB-2MB):</label>
+          <input type="file" id="class-10-marksheet" name="class-10-marksheet" accept=".jpg, .pdf">
+
+          <label for="class-12-marksheet">Class 12 Marksheet (Accepted only JPG and PDF formats, 50KB-2MB):</label>
+          <input type="file" id="class-12-marksheet" name="class-12-marksheet" accept=".jpg, .pdf">
+
+          <div class="btn-container">
+            <input type="submit" class="btn-submit" value="Submit">
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="/Documents upload/docscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IISTM Entrance Test (UG)-2024</title>
+  <link rel="stylesheet" type="text/css" href="/Final preview/fp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <img src="logo.jpeg" alt="IISTM Logo">
+    </div>
+    <div class="title">
+      <h1>IISTM Entrance Test (UG)-2024</h1>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="progress-bar">
+      <h4>Application Form Steps</h4>
+      <ul>
+        <li><i class="fa-solid fa-circle"></i><a href="/index.html">Personal Details</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Additional details/indexad.html">Additional Details</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Educational details/indexed.html">Educational Qualification</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Documents upload/docindex.html">Documents Upload</a></li>
+        <li><i class="fa-solid fa-circle"></i><a href="/Final preview/indexfp.html">Final Preview</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <section class="heading">
+        <h2>Personal Details</h2>
+      </section>
+
+      <section>
+        <form id="entrance-form">
+          <label for="candidate-name">Candidate's Name:</label>
+          <input type="text" id="candidate-name" name="candidate-name" required>
+
+          <label for="father-name">Father's Name/Guardian's Name:</label>
+          <input type="text" id="father-name" name="father-name" required>
+
+          <label for="mother-name">Mother's Name/Guardian's Name:</label>
+          <input type="text" id="mother-name" name="mother-name" required>
+
+          <label for="date-of-birth">Date of Birth:</label>
+          <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+
+          <label for="nationality">Nationality:</label>
+          <select id="nationality" name="nationality" required>
+            <option value="">Select Nationality</option>
+            <option value="indian">Indian</option>
+            <option value="foreign">Foreign</option>
+          </select>
+
+          <label for="identity-type">Identity Type:</label>
+          <select id="identity-type" name="identity-type" required>
+            <option value="">Select Identity Type</option>
+            <option value="pan-card">Pan Card</option>
+            <option value="voter-id">Voter ID</option>
+            <option value="ration-card">Ration Card</option>
+            <option value="driving-license">Driving License</option>
+            <option value="govt-id">Any other valid govt ID</option>
+          </select>
+
+          <label for="card-no">Card No:</label>
+          <input type="text" id="card-no" name="card-no" required>
+        </form>
+      </section>
+
+      <section class="heading">
+        <h2>Address</h2>
+      </section>
+
+      <section>
+        <form id="address-form">
+          <label for="premises-no">Premises No/Name:</label>
+          <input type="text" id="premises-no" name="premises-no" required>
+
+          <label for="sub-locality">Sub Locality (Optional):</label>
+          <input type="text" id="sub-locality" name="sub-locality">
+
+          <label for="locality">Locality:</label>
+          <input type="text" id="locality" name="locality" required>
+
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" required>
+
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required>
+
+          <label for="district">District:</label>
+          <input type="text" id="district" name="district" required>
+
+          <label for="pin-code">Pin Code:</label>
+          <input type="text" id="pin-code" name="pin-code" required>
+
+          <label for="mobile-number">Mobile Number (with country code):</label>
+          <input type="text" id="mobile-number" name="mobile-number" required>
+
+          <label for="additional-mobile-number">Additional Mobile Number:</label>
+          <input type="text" id="additional-mobile-number" name="additional-mobile-number">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="additional-email">Additional Email Address:</label>
+          <input type="email" id="additional-email" name="additional-email">
+        </form>
+      </section>
+
+      <section class="heading">
+        <h2>Choose Password</h2>
+      </section>
+
+      <section>
+        <form id="password-form">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+
+          <label for="security-question">Security Question:</label>
+          <select id="security-question" name="security-question" required>
+            <option value="">Select Security Question</option>
+            <option value="school-name">What is the name of your first school?</option>
+            <option value="pet-name">What is your neighbor's pet name?</option>
+            <option value="website">What is the website you rarely visit?</option>
+            <option value="favorite-book">What is your favorite book?</option>
+          </select>
+
+          <label for="security-answer">Security Answer:</label>
+          <input type="text" id="security-answer" name="security-answer" required>
+        </form>
+      </section>
+
+      <section>
+        <form id="entrance-form" onsubmit="submitForm(event)">
+          <!-- form fields -->
+
+          <div class="btn-container">
+            <input type="submit" class="btn-submit" value="Submit">
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

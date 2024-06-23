@@ -1,0 +1,191 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ded9d9;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 85px;
+}
+
+.title {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: #3399ff;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #ffffff;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #0077cc;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  flex-basis: 200px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.progress-bar h4 {
+  color: #3399ff;
+  margin-bottom: 10px;
+}
+
+.progress-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-bar ul li {
+  margin-bottom: 10px;
+}
+
+.progress-bar ul li i {
+  margin-right: 10px;
+}
+
+.progress-bar ul li a {
+  text-decoration: none;
+}
+
+.progress-bar ul li a:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading h2 {
+  color: #3399ff;
+  border-bottom: 2px solid #3399ff;
+  padding-bottom: 10px;
+}
+
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for Responsive Layout */
+@media screen and (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-right: 20px;
+    height: 80px;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .navbar {
+    text-align: right;
+  }
+
+  .container {
+    flex-direction: row;
+  }
+
+  .progress-bar {
+    flex-basis: auto;
+    width: 200px;
+  }
+
+  .main {
+    margin-left: 20px;
+  }
+}
+
+/* Increased width of school name and address input fields */
+#10th-school-name,
+#11th-school-name,
+#12th-school-name,
+#10th-school-address,
+#11th-school-address,
+#12th-school-address {
+  width: 100%;
+  height: 40px;
+}
